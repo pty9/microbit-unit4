@@ -1,5 +1,3 @@
-let ltrim = 0
-let rtrim = 0
 function go_forward (speed: number) {
     init()
     TinkerBott.motors(ltrim * speed, rtrim * speed)
@@ -12,6 +10,11 @@ function init () {
     rtrim = 1
     ltrim = 1
 }
+let rtrim = 0
+let ltrim = 0
+go_forward(100)
+basic.pause(5000)
+TinkerBott.stopcar()
 basic.forever(function () {
 	
 })

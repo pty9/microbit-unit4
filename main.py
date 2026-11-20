@@ -7,7 +7,7 @@ def go_backward(speed2: number):
 def init():
     global rtrim, ltrim
     rtrim = 1
-    ltrim = 0.98
+    ltrim = 1
 rtrim = 0
 ltrim = 0
 go_forward(100)
